@@ -15,13 +15,6 @@ namespace ariel{
         
     }
 
-    // Card::Card(const Card& other) {
-    //     this->type = other.get_type();
-    //     this->value = other.get_value();
-    // }
-
-    // Card::~Card(){}
-
     string Card::get_type() const{
         return this->type;
     }
