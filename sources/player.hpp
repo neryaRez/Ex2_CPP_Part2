@@ -2,6 +2,8 @@
 
 
 #include "card.hpp"
+#include <vector>
+#include <stack>
 using namespace std;
 
 namespace ariel{
@@ -9,20 +11,24 @@ namespace ariel{
     class Player{
 
 
-        std::string name;
-       // std::vector<Card> packet;
+        string name;
+        vector<Card> packet;
+        int taken;
 
         public:
+             
+            Player(string name);
 
-            //Player();
-            Player(std::string name);
-
-            ~Player();
+            Player();
 
             int stacksize();
 
-            int cardesTaken();
+            int& cardesTaken();
 
+            string getName();
+
+            vector<Card>& get_packet();
+            
     };
 
 
