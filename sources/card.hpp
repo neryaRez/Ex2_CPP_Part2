@@ -1,7 +1,6 @@
 
 
 #pragma once
-//#include <vector>
 #include <string>
 using namespace std;
 
@@ -16,7 +15,6 @@ namespace ariel
 
             Card();
             Card(string, int);
-            // Card(const Card& );
             int get_value () const;
             string get_type() const;
 
